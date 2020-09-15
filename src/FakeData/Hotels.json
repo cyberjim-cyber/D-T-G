@@ -1,0 +1,29 @@
+[
+    {
+        "id": 0,
+        "title": "Light bright airy stylish apt & safe peaceful stay",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 34,
+        "image": "https://i.postimg.cc/9FCrwgyq/bedwhite.png"
+    },
+    {
+        "id": 1,
+        "title": "Apartment in Lost Panorama",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.8,
+        "price": 52,
+        "image": "https://i.postimg.cc/WpMd3cqv/bedred.png"
+    },
+    {
+        "id": 2,
+        "title": "AR Longe & Pool (r&r + b&b)",
+        "feature": "4 guests | 2 bedrooms | 2 beds | 2 baths",
+        "details": "Wif Air conditioning Kitchen",
+        "rating": 4.9,
+        "price": 44,
+        "image": "https://i.postimg.cc/qMwgscGD/eveningbeach.png"
+    }
+]
