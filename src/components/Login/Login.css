@@ -1,0 +1,29 @@
+.login{
+    background-image: url();
+}
+.login-form{
+    /* padding:50px 0px;
+    margin-left: 35%; */
+    background-color: #fff;
+}
+.button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.button:focus{
+    outline: 0;
+}
+.social-login{
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 25px;
+}
+.center{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}

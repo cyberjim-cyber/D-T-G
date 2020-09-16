@@ -1,15 +1,10 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 .Home{
   background: linear-gradient(rgba(0, 0, 0, 0.611), rgba(0, 0, 0, 0.611)), url("./Images/coxsbazar.png");
 }
 .App {
   margin: 0px 0px;
-  font-size: larger;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .App-logo {

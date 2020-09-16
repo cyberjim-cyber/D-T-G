@@ -1,5 +1,5 @@
 .place-div{
-    width: 800px;
+    width: 706px;
     overflow: auto;
     display: none;
     scrollbar-width: none;
@@ -22,3 +22,10 @@
     outline: 0;
     border: none;
 }
+/* .name{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+.details{
+    font-family: 'Montserrat', sans-serif;
+} */

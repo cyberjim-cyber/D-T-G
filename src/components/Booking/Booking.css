@@ -1,0 +1,8 @@
+.border-style{
+    border: none;
+    outline: none;
+}
+.border-style:focus{
+    border: none;
+    outline: none;
+}
