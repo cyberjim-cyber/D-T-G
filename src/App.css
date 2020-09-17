@@ -1,6 +1,7 @@
 
 .Home{
   background: linear-gradient(rgba(0, 0, 0, 0.611), rgba(0, 0, 0, 0.611)), url("./Images/coxsbazar.png");
+  background-size: cover;
 }
 .App {
   margin: 0px 0px;

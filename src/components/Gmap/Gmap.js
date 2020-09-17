@@ -19,7 +19,7 @@ const Gmap = (props) => {
             lng={30.337844}
             text="My Marker"
           /> */}
-          <MDBIcon style={{color:'red', height:'40px'}} icon="map-marker" position={marker} />
+          <MDBIcon className="fa-3x" style={{color:'red'}} icon="map-marker" position={marker} />
         </GoogleMapReact>
       </div>
     );

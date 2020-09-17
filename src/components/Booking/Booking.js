@@ -20,7 +20,7 @@ const Booking = () => {
                 <MDBRow className="py-5">
                     <MDBCol className="col-md-5">
                         <div style={{ color: 'white', height: '250px' }} className=" mt-5">
-                            <h1 className="name"><strong>{data.name}</strong></h1>
+                            <h1 className="name"><strong className="name-style">{data.name}</strong></h1> <br/>
                             <p className="details">{data.details}</p>
                         </div>
                         <Link to="/"><MDBBtn color="primary"> <MDBIcon icon="arrow-left" /> Back</MDBBtn></Link>

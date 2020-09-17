@@ -12,20 +12,37 @@
     width: 270px;
     border-radius: 25px;
     border: 3px solid rgb(230, 199, 27);
-    margin: 20px 10px;
+    /* margin: 20px 10px; */
 }
 .place-btn{
+    height: 420px;
+    width: 270px;
+    border-radius: 25px;
+    margin: 20px 10px;
     background: inherit;
     border: none;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 .place-btn:focus{
     outline: 0;
     border: none;
+    box-shadow: 15px 10px 12px -3px rgba(245, 202, 30, 0.974)
 }
-/* .name{
+
+.carousel-caption{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+h4{
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
+    color: rgb(230, 199, 27);
+    font-style: italic;
 }
-.details{
-    font-family: 'Montserrat', sans-serif;
-} */
+.name-style{
+    background-color: orange;
+    border-radius: 15px;
+    padding: 4px 20px;
+}

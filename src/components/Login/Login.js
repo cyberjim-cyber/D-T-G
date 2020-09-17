@@ -162,7 +162,7 @@ const Login = () => {
             <div className="login-form w-50 p-5">
 
                 <div className="center float-left">
-                    {newUser ? <h4>Create an account</h4> : <h4>Log In</h4>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    {newUser ? <h3>Create an account</h3> : <h3>Log In</h3>} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     {
                         loader &&
                         <div className="spinner-border text-primary" role="status">

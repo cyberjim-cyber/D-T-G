@@ -1,5 +1,5 @@
 import { MDBCol, MDBContainer, MDBRow } from 'mdbreact';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import HotelData from '../../FakeData/Hotels.json';
 import Gmap from '../Gmap/Gmap';
@@ -8,12 +8,14 @@ import Place from '../../FakeData/Place.json';
 import './Hotels.css'
 
 const Hotels = () => {
-    const { name } = useParams();
-    console.log(name)
-    const data = [...HotelData]
-    const place = [...Place];
+    const { name } = useParams(); //selected place
+    const data = [...HotelData] // all hotels
+    const place = [...Place]; // all 4 place
+
     const selectedPlace = place.find(each => each.name === name);
-    
+    const hotels = data.filter( each => each.place === name)
+
+    // point google map marker in selected place
     const marker = {
         "lat":selectedPlace.lat,
         "lng":selectedPlace.lon
@@ -27,12 +29,13 @@ const Hotels = () => {
                         <h4><strong>Stay in {name}</strong></h4> <br/> 
                     </div>
                     {
-                        data.map(each => <HotelDetails key={each.id} data={each}></HotelDetails>)
+                        hotels.map(each => <HotelDetails key={each.id} data={each}></HotelDetails>)
                     }
                 </MDBCol>
                 <MDBCol className="col-5">
                     <div className="">
-                        <Gmap marker={marker} />
+                        {/* // showing map */}
+                        <Gmap marker={marker} /> 
                     </div>
                     
                 </MDBCol>
