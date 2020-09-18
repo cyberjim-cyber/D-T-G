@@ -12,7 +12,6 @@ import { googleSignOut } from "../Login/LogInManager";
 
 const Header = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
-    //console.log(loggedInUser, "header")
 
     const logOut =()=>{
         googleSignOut();
@@ -22,7 +21,6 @@ const Header = () => {
         <MDBContainer>
             <MDBNavbar color="inherit" dark expand="sm">
                 <MDBNavbarBrand>
-                    {/* <strong className="white-text">Navbar</strong> */}
                     <Link to="/">
                         <div>
                             <img src={logo} alt="" height="50" style={{ padding: '4px 4px', background: 'white', borderRadius: '15px' }} />
@@ -39,8 +37,9 @@ const Header = () => {
                         </MDBFormInline>
                     </MDBNavItem>
                 </MDBNavbarNav>
-
                 <MDBNavbarToggler />
+
+                
                 <MDBCollapse id="navbarCollapse3" navbar>
                     <MDBNavbarNav right>
                         <MDBNavItem>

@@ -18,6 +18,7 @@ const Booking = () => {
         <div>
             <MDBContainer className="py-5">
                 <MDBRow className="py-5">
+                    {/* ------- left side -- selected place details */}
                     <MDBCol className="col-md-5">
                         <div style={{ color: 'white', height: '250px' }} className=" mt-5">
                             <h1 className="name"><strong className="name-style">{data.name}</strong></h1> <br/>
@@ -25,8 +26,10 @@ const Booking = () => {
                         </div>
                         <Link to="/"><MDBBtn color="primary"> <MDBIcon icon="arrow-left" /> Back</MDBBtn></Link>
                     </MDBCol>
+                    {/* ----- right side */}
                     <MDBCol className="col-md-7">
                         <div className="form w-75 ml-5" style={{ backgroundColor: 'white' }}>
+                        {/* ----------------- booking form */}
                             <form action="" style={{ background: 'white', padding: '20px 20px', borderRadius: '20px' }}>
                                 <label htmlFor="Origin">Origin</label><br />
                                 <input className="form-control" value="Dhaka" type="text" required /><br />

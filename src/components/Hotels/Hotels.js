@@ -24,6 +24,7 @@ const Hotels = () => {
         <div>
             <MDBContainer>
             <MDBRow style={{ backgroundColor: 'white' }}>
+                {/* ---- left side / sowing hotels */}
                 <MDBCol className="col-7">
                     <div className="m-3">
                         <h4><strong>Stay in {name}</strong></h4> <br/> 
@@ -32,6 +33,7 @@ const Hotels = () => {
                         hotels.map(each => <HotelDetails key={each.id} data={each}></HotelDetails>)
                     }
                 </MDBCol>
+                {/* ------- right side / showing map */}
                 <MDBCol className="col-5">
                     <div className="">
                         {/* // showing map */}

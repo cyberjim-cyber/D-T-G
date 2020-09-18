@@ -7,7 +7,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
 import 'react-datepicker/dist/react-datepicker.css';
-import DatePicker from 'react-date-picker/dist/entry.nostyle';
 
 ReactDOM.render(
   <React.StrictMode>

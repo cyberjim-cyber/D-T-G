@@ -11,6 +11,8 @@ import fb from '../../Images/icons/fb.png';
 const Login = () => {
     initializeFirebaseLogin();
 
+    // warning msg states-----
+    
     const [nameWarning, setNameWarning] = useState("")
     const [emailWarning, setEmailWarning] = useState("")
     const [passwordWarning, setPasswordWarning] = useState("")
@@ -37,13 +39,13 @@ const Login = () => {
 
 
     const handleResponse = (res, redirect) => { //---------------- Handle response from firebase
-        console.log(res.error)
+        //console.log(res.error)
         if (res.error) {
             document.getElementById("form").reset();
             newUser && setErrMsg(res.error)
             !newUser && setErrMsg(res.error)
         } else {
-            console.log(res.displayName)
+            //console.log(res.displayName)
             setUser(res);
             setLoggedInUser(res)
             setLoggedInUser(res)
@@ -57,7 +59,6 @@ const Login = () => {
     const googleSignInClick = () => { //------------------- Google Sign In
         googleSignIn()
             .then(res => {
-                console.log(res)
                 res && handleResponse(res, true);
             })
     }
@@ -68,9 +69,8 @@ const Login = () => {
                 handleResponse(res, true)
             })
     }
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) => { // -------------- handle form submit--------------------------------
         console.log("submitting.....", user)
-        
         setErrMsg("")
         setLoader(true);
         setTimeout(() => {
@@ -173,6 +173,7 @@ const Login = () => {
                 </div>
 
 
+                {/* ----- log in form staring -------- */}
 
                 <form onSubmit={handleSubmit} id="form">
                     {newUser && <> <input className="form-control" onChange={nameCheck} name="name" type="text" placeholder="Name" required /><br />
@@ -205,10 +206,14 @@ const Login = () => {
                     }
 
                 </form>
-
+                
                 <br />
+                {/* ----- login form end */}
+
                 <div className="d-flex justify-content-center text-mute">Or</div>
                 <br />
+
+                {/* ---------Facebook login----- */}
                 <div className="social-login px-5 py-2">
                     <button className="button ml-3" onClick={fbSignInClick}>
                         <img src={fb} height="28" alt="" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -216,6 +221,8 @@ const Login = () => {
                     </button>
                 </div>
                 <br />
+
+                {/* -------- google login ------------------- */}
                 <div className="social-login px-5 py-2">
                     <button className="button ml-3" onClick={googleSignInClick}>
                         <img src={google} height="25" alt="" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
